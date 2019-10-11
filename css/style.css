@@ -1,0 +1,131 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.top-block {
+    background-image: url(../img/first.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.intro-block h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    background: linear-gradient(to right, #00afca, transparent);
+    color: #fff;
+}
+.intro-block .text {
+    font-size: 1.125rem;
+    line-height: 1.2;    
+    background: #fff;
+    color: #666;
+}
+.btn-orange {
+    color: #fff;
+    background-color: #fcae41;
+    border-color: #fcae41;
+}
+.btn-orange:hover {
+    color: #fff;
+    background-color: #f98f19;
+    border-color: #f98f19;
+}
+
+.bottom-block {
+    background-image: url(../img/sec.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.bottom-block h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    color: #666;
+    text-align: center;
+}
+.bottom-block h2:before {
+    content:"";
+    display: inline-block;
+    background-color: #ff9700;
+    width: 20px;
+    height: 1.8rem;
+    margin-right: .8rem;
+}
+
+.act-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+    padding: 30px 30px 30px 80px;
+}
+.act-block .text {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #666;
+}
+.icon-block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: -50px;
+    top: calc(50%+150px);
+}
+.blue-style {
+    border: 3px solid #71d8e9;
+    border-radius: 1rem;
+}
+.blue-style .icon-block {
+    background-color: #71d8e9;
+}
+.blue-style a {
+    color: #00b0ca;
+}
+.yellow-style {
+    border: 3px solid #fedda8;
+    border-radius: 1rem;
+}
+.yellow-style .icon-block {
+    background-color: #fedda8;
+}
+.yellow-style a {
+    color: #ff9700;
+}
+.my-6 {
+    margin: 6rem 0;
+}
+
+@media only screen and (max-width: 991px) {
+    .top-block {
+        background-image: none;
+    }
+    .intro-block h1 {
+        background: #00afca;
+        font-size: 1.5rem;
+    }
+    .intro-block .text {
+        border: 1px solid #ddd;
+    }
+    .bottom-block {
+        background-image: none;
+    }
+    .my-6 {
+        margin: 3rem 0;
+    }   
+    .bottom-block h2 {
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
+    .bottom-block h2:before {
+        display: none;
+    }
+    .act-block .text {
+        font-size: 1rem;
+    }
+}
